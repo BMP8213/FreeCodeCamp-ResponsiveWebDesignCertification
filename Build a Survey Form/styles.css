@@ -1,0 +1,18 @@
+header{
+  text-align: center;
+}
+body{
+    background: rgb(161, 201, 218);
+   }
+  
+label{
+    display: block;
+  }
+form{
+    background: rgb(184, 199, 240);
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+    padding-bottom: 2em;
+  }

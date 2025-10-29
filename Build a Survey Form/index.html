@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Build a Survey Form</title>
+    <meta charset="UFT-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <h1 id="title">Information Fill</h1>
+      <p id="description">Please fill your real identity!</p>
+    </header>
+
+
+    <form id="survey-form">
+      <fieldset>
+      <div>
+        <label for="name" id="name-label">Name<br>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+        </label>
+      </div>
+
+      <div>
+        <label for="email" id="email-label">Email<br>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+        </label>
+      </div>
+
+      <div>
+        <label for="number" id="number-label">Age<br>
+          <input type="number" id="number" name="age" placeholder="Age" min="0" max="100" required/>
+      </div>
+
+      <div>
+        <p>Which option best describes your current role?</p>
+        <label for="dropdown">
+          <select id="dropdown" placeholder="select you current role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="parent">Parent</option>
+            <option value="else">Else</option>
+            </select>
+        </label>
+      </div>
+      
+      <div>
+        <p>What do you want?</p>
+        <label for="news info">
+          <input type="radio" id="news info" name="samegroup" value="new-info" checked/>News Info</label>
+        <label for="great help">
+          <input type="radio" id="great help" name="samegroup" value="great-help" checked/>Great Help</label>
+        <label for="experience">
+          <input type="radio" id="experience" name="samegroup" value="experience" checked/>Experience</label>
+      </div>
+
+      <div>
+        <p>How do you know us?</p>
+        <label for="facebook">
+          <input type="checkbox" id="facebook" value="facebook"/>Facebook</label>
+        <label for="youtube">
+          <input type="checkbox" id="youtube" value="youtube"/>Youtube</label>
+        <label for="tiktok">
+            <input type="checkbox" id="tiktok" value="tiktok"/>TikTok</label>
+        <label for="else">
+            <input type="checkbox" id="else" value="else"/>Else</label>
+      </div>
+      
+      <div>
+      <p>Any Comments or Suggestions</p>
+      <label for="cmm-sec" >
+        <textarea id="cmm-sec" placeholder="Enter your comments here!!"rows="10" cols="30"></textarea></label>
+      </div>
+      
+      <div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+      
+      </fieldset>
+    </form>
+    
+    </div>
+</body>
